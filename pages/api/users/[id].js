@@ -1,5 +1,5 @@
-import { apiHandler } from 'helpers/api';
-import { usersRepo } from 'helpers/api';
+import { apiHandler } from '../../../helpers/api-handler';
+import { usersRepo } from '../../../helpers/users-repo';
 
 export default apiHandler({
   get: getById,
@@ -20,10 +20,7 @@ function update(req, res) {
 
   if (!user) throw 'User Not Found';
 
-  // split out password from user details
-  const { params } = req.body;
-
-  usersRepo.update(req.query.id, params);
+  usersRepo.update(req.query.id, req.body);
   return res.status(200).json({});
 }
 

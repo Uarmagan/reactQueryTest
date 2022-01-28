@@ -1,37 +1,37 @@
 [
-  {
-    "id": 1,
-    "name": "john",
-    "age": 30,
-    "city": "new york",
-    "occupation": "web developer"
-  },
-  {
-    "id": 2,
-    "name": "jane",
-    "age": 32,
-    "city": "new york",
-    "occupation": "retired"
-  },
-  {
-    "id": 3,
-    "name": "david",
-    "age": 12,
-    "city": "brussels",
-    "occupation": "student"
-  },
-  {
-    "id": 4,
-    "name": "mary",
-    "age": 22,
-    "city": "paris",
-    "occupation": "web designer"
-  },
-  {
-    "id": 5,
-    "name": "peter",
-    "age": 32,
-    "city": "brussels",
-    "occupation": "teacher"
-  }
+    {
+        "id": 1,
+        "name": "john",
+        "age": 30,
+        "city": "new york",
+        "occupation": "web developer"
+    },
+    {
+        "id": 2,
+        "name": "Kenny",
+        "age": "26",
+        "city": "new york",
+        "occupation": "retired"
+    },
+    {
+        "id": 3,
+        "name": "Robin",
+        "age": "29",
+        "city": "chicago",
+        "occupation": "student"
+    },
+    {
+        "id": 4,
+        "name": "mary",
+        "age": 22,
+        "city": "paris",
+        "occupation": "web designer"
+    },
+    {
+        "id": 5,
+        "name": "peter",
+        "age": "35",
+        "city": "Minnesota",
+        "occupation": "teacher"
+    }
 ]

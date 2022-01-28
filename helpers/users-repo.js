@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // users in JSON file for simplicity, store in a db for production applications
-let users = require('data/users.json');
+let users = require('../data/users.json');
 
 export const usersRepo = {
   getAll: () => users,
@@ -23,7 +23,6 @@ function create(user) {
 
 function update(id, params) {
   const user = users.find((x) => x.id.toString() === id.toString());
-
   // update and save
   Object.assign(user, params);
   saveData();
