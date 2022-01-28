@@ -1,7 +1,11 @@
 import axios from 'axios';
+const dev = process.env.NODE_ENV !== 'production';
+const baseURL = dev
+  ? 'http://localhost:3000/'
+  : 'https://react-query-test-omega.vercel.app';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/',
+  baseURL,
 });
 
 export const getUsers = () => api.get('/api/users').then(({ data }) => data);
