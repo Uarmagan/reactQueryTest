@@ -6,11 +6,15 @@ import * as api from '../http/usersApi';
 export const UserForm = ({ user, setIsEditing }) => {
   const [fields, setFields] = React.useState({ ...user });
   const queryClient = useQueryClient();
+
   const { isLoading, mutate } = useMutation(api.updateUser, {
-    onSuccess: (data) => {
-      queryClient.setQueryData(['users', user.id], data);
-      // // trigger the old data to be invalidated
-      // queryClient.invalidateQueries(['users', user.id]);
+    onMutate: (data) => {
+      queryClient.setQueryData(['users', data.id], data);
+      setIsEditing(false);
+    },
+    onSuccess: () => {
+      // trigger the old data to be invalidated
+      queryClient.invalidateQueries(['users', user.id]);
       setIsEditing(false);
     },
   });

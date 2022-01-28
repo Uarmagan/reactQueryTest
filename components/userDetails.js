@@ -5,9 +5,14 @@ import { UserForm } from './userform';
 import React from 'react';
 export const UserDetails = ({ userId }) => {
   const [isEditing, setIsEditing] = React.useState(false);
-  const { data, isLoading, isError, error } = useQuery(['users', userId], () =>
-    api.getUserById(userId)
+  const { data, isLoading, isError, error } = useQuery(
+    ['users', userId],
+    () => api.getUserById(userId),
+    {
+      enabled: Boolean(userId),
+    }
   );
+
   if (!userId) return <h3>No user selected</h3>;
 
   if (isLoading) return <h3>Loading...</h3>;

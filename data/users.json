@@ -1,36 +1,36 @@
 [
     {
         "id": 1,
-        "name": "john",
-        "age": 30,
-        "city": "new york",
-        "occupation": "web developer"
+        "name": "Taylor",
+        "age": "24",
+        "city": "Chicago",
+        "occupation": "CEO of Optum"
     },
     {
         "id": 2,
         "name": "Kenny",
-        "age": "26",
-        "city": "new york",
+        "age": "30",
+        "city": "Los Angeles",
         "occupation": "retired"
     },
     {
         "id": 3,
         "name": "Robin",
         "age": "29",
-        "city": "chicago",
-        "occupation": "student"
+        "city": "Mexico",
+        "occupation": "Web Developer"
     },
     {
         "id": 4,
-        "name": "mary",
-        "age": 22,
+        "name": "Mary",
+        "age": "25",
         "city": "paris",
-        "occupation": "web designer"
+        "occupation": "CTO of Optum"
     },
     {
         "id": 5,
-        "name": "peter",
-        "age": "35",
+        "name": "Peter",
+        "age": "36",
         "city": "Minnesota",
         "occupation": "teacher"
     }
